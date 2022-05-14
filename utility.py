@@ -1,4 +1,12 @@
-#Help functions
+#Help functions and variables
+import os
+
+SCORES_FILE_NAME = "Scores.txt"
+BAD_RETURN_CODE = -1
+
+#A function to clear the screen
+def screen_cleaner():
+    os.system('cls')
 
 #Validate the input is int number and number in range
 def validate_input_int_number(validate_range):
