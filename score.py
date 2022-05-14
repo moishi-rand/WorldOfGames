@@ -1,9 +1,6 @@
 
-points_of_winning = 0
-
 #Update score of the player
 def add_score(difficulty):
-    global points_of_winning
     points_of_winning = difficulty * 3 + 5
 
     try:
