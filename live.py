@@ -1,6 +1,7 @@
 import currency_roulette_game
 import guess_game
 import memory_game
+import score
 from utility import validate_input_int_number
 
 #Return welcome str with name of player
@@ -29,8 +30,11 @@ def load_game():
 
     if(is_win_game):
         print("You Win!!!!!!!")
+        update_player_score(difficult_number)
     else:
         print("Lose, try next time!")
 
+def update_player_score(difficult):
+    score.add_score(difficult)
 
 
